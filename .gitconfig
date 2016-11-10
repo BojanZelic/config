@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+[user]
+        email = bojan.zelic@vonage.com
+        name = Bojan Zelic
+[core]
+        autocrlf = input
+        editor = vim
+[alias]
+        recent = ! git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - (%(color:green)%(committerdate:relative)%(color:reset))' | sed 's/*//'
+        checkout-branch= !BRANCH=`git recent | tac | fzf --ansi --no-sort --preview='git log -p -2 --branches=master {1}' | tr -s ' ' | cut -d' ' -f2` && git checkout ${BRANCH}
+        undo-commit = reset --soft HEAD^
