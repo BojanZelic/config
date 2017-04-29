@@ -9,3 +9,5 @@
         checkout-branch= !BRANCH=`git recent | tac | fzf --ansi --no-sort --preview='git lg -p -5 --branches=master {1}' | tr -s ' ' | cut -d' ' -f2` && git checkout ${BRANCH}
         undo-commit = reset --soft HEAD^
         lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[push]
+	default = simple
