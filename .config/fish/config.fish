@@ -18,4 +18,4 @@ set -g OMF_PATH $HOME/.local/share/omf
 source $OMF_PATH/init.fish
 
 eval (thefuck --alias | tr '\n' ';')
-
+alias config '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
