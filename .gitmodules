@@ -2,3 +2,7 @@
 	path = .vimpkg/bundle/tagbar
 	url = git@github.com:majutsushi/tagbar.git
 	ignore = dirty
+[submodule ".vimpkg/bundle/nerdtree"]
+	path = .vimpkg/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+	ignore = dirty
