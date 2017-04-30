@@ -1,0 +1,4 @@
+[submodule ".vimpkg/bundle/tagbar"]
+	path = .vimpkg/bundle/tagbar
+	url = git@github.com:majutsushi/tagbar.git
+	ignore = dirty
