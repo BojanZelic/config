@@ -1,0 +1,5 @@
+package config
+package foreign-env
+package tmux-zen
+theme agnoster
+theme default
