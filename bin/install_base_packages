@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo apt-get --assume-yes install xbindkeys fish vim 
+sudo apt-get --assume-yes install xbindkeys fish vim thefuck tmux

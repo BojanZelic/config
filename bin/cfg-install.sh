@@ -1,14 +1,14 @@
 git clone --bare git@github.com:BojanZelic/config.git $HOME/.cfg
-function config {
+function home_config {
    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
 mkdir -p .config-backup
-config checkout -f master
+home_config checkout -f master
 if [ $? = 0 ]; then
   echo "Checked out config.";
   else
     echo "Backing up pre-existing dot files.";
-    config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/{}
+    home_config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/{}
 fi;
-config checkout -f master
-config config status.showUntrackedFiles no
+home_config checkout -f master
+home_config config status.showUntrackedFiles no
