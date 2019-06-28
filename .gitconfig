@@ -1,6 +1,7 @@
 [user]
-        email = bojan.zelic@vonage.com
+        email = bojan.zelic@kudelskisecurity.com
         name = Bojan Zelic
+	signingkey = 6C52CAD26E39F754
 [core]
         autocrlf = input
         editor = vim
@@ -11,3 +12,7 @@
         lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [push]
 	default = simple
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
