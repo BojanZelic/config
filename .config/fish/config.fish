@@ -8,6 +8,7 @@ source $OMF_PATH/init.fish
 
 #source completions/vault.fish
 source ~/.config/fish/config.variables.fish
+set -xg SUMMON_PROVIDER "/bin/cat"
 
 alias mk='minikube --alsologtostderr'
 #eval (ssh-agent -c)
