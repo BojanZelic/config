@@ -11,7 +11,11 @@ source ~/.config/fish/config.variables.fish
 set -xg SUMMON_PROVIDER "/bin/cat"
 
 alias mk='minikube --alsologtostderr'
-#eval (ssh-agent -c)
-set -gx PATH /snap/bin $PATH
+if test -z "$SSH_AGENT_PID"
+	eval (ssh-agent -c)
+	ssh-add ~/.ssh/id_rsa
+ 	ssh-add ~/.ssh/MyOhioKP.pem
+end
+set -gx PATH ~/go/bin ~/.local/bin /snap/bin $PATH
 
 alias homeconfig '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
