@@ -6,3 +6,6 @@
 	path = .vimpkg/bundle/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
 	ignore = dirty
+[submodule ".tmux"]
+	path = .tmux
+	url = https://github.com/gpakosz/.tmux.git
