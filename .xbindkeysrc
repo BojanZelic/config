@@ -73,29 +73,47 @@
 
 "qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Bottom Left'"
 Control + Mod2+Mod4 + Super_L + KP_1
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Bottom Left'"
+Control+Mod2 + KP_End
 
 "qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Bottom'"
 Control + Mod2+Mod4 + Super_L + KP_2
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Bottom'"
+Control+Mod2 + KP_Down
 
 "qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Bottom Right'"
 Control + Mod2+Mod4 + Super_L + KP_3
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Bottom Right'"
+Control+Mod2 + KP_Next
 
 "qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Top Left'"
 Control + Mod2+Mod4 + Super_L + KP_7
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Top Left'"
+Control+Mod2 + KP_Home
 
 "qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Top Right'"
 Control + Mod2+Mod4 + Super_L + KP_9
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Top Right'"
+Control+Mod2 + KP_Prior
 
 "qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Left'"
 Control + Mod2+Mod4 + Super_L + KP_4
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Left'"
+Control+Mod2 + KP_Left
 
 "qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Right'"
 Control + Mod2+Mod4 + Super_L + KP_6
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Right'"
+Control+Mod2 + KP_Right
 
 "qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Top'"
 Control + Mod2+Mod4 + Super_L + KP_8
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Quick Tile Top'"
+Control+Mod2 + KP_Up
 
 "qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Maximize'"
 Control + Mod2+Mod4 + Super_L + KP_5
+"qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Window Maximize'"
+Control+Mod2 + KP_Begin
 
 ## end .xbindkeys

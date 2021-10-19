@@ -14,7 +14,6 @@ alias mk='minikube --alsologtostderr'
 if test -z "$SSH_AGENT_PID"
 	eval (ssh-agent -c)
 	ssh-add ~/.ssh/id_rsa
- 	ssh-add ~/.ssh/MyOhioKP.pem
 end
 set -gx PATH ~/go/bin ~/.local/bin /snap/bin $PATH
 
