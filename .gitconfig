@@ -1,7 +1,7 @@
 [user]
-        email = bojan.zelic@kudelskisecurity.com
+        email = bojan.zelic@qualia.com
         name = Bojan Zelic
-	signingkey = 6C52CAD26E39F754
+	signingkey = 94094C7A6F6016D8
 [core]
         autocrlf = input
         editor = vim
@@ -24,6 +24,6 @@
 [push]
 	default = simple
 [gpg]
-	program = gpg
+	program = gpg2
 [commit]
 	gpgsign = true
