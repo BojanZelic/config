@@ -11,10 +11,10 @@ source ~/.config/fish/config.variables.fish
 set -xg SUMMON_PROVIDER "/bin/cat"
 
 alias mk='minikube --alsologtostderr'
-if test -z "$SSH_AGENT_PID"
-	eval (ssh-agent -c)
-	ssh-add ~/.ssh/id_rsa
-end
+#if test -z "$SSH_AGENT_PID"
+#	eval (ssh-agent -c)
+#	ssh-add ~/.ssh/id_rsa
+#end
 set -gx PATH ~/go/bin ~/.local/bin /snap/bin $PATH
 
 alias homeconfig '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
