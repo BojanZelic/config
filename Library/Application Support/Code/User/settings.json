@@ -1,0 +1,40 @@
+{
+    "terminal.integrated.env.osx": {
+        "INSIDE_EMACS": "true"
+    },
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
+        },
+        "fish": {
+            "path": "/usr/local/bin/fish",
+            "args": [
+                "-l"
+            ]
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    },
+    "files.autoSave": "afterDelay",
+    "editor.inlineSuggest.enabled": true,
+    "go.lintTool":"golangci-lint",
+    "go.lintFlags": [
+    "--fast"
+    ]
+}
