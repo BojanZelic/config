@@ -5,6 +5,7 @@
 [core]
         autocrlf = input
         editor = vim
+	excludesfile = /Users/bojanzelic/.gitignore
 [alias]
         recent = ! git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - (%(color:green)%(committerdate:relative)%(color:reset))' | sed 's/*//'
         checkout-branch= !BRANCH=`git recent | tac | fzf --ansi --no-sort --preview='git lg -p -5 --branches=master {1}' | tr -s ' ' | cut -d' ' -f2` && git checkout ${BRANCH}
@@ -29,3 +30,5 @@
 	gpgsign = true
 [credential]
 	helper = osxkeychain
+[pull]
+	rebase = false

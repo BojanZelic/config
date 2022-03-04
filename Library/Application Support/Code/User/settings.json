@@ -36,5 +36,8 @@
     "go.lintTool":"golangci-lint",
     "go.lintFlags": [
     "--fast"
-    ]
+    ],
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "go.toolsManagement.autoUpdate": true
 }
