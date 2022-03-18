@@ -1,3 +1,11 @@
+
+set -gx PATH /opt/homebrew/bin /opt/homebrew/sbin {$GOPATH}/bin {$GOROOT}/bin ~/.local/bin /snap/bin $PATH
+set -gx PATH $PATH $HOME/.krew/bin
+
+export GOPATH=$HOME/go
+export GOROOT=(brew --prefix golang)/libexec
+export GPG_TTY=(tty)
+
 # Path to Oh My Fish install.
 set -q XDG_DATA_HOME
   and set -gx OMF_PATH "$XDG_DATA_HOME/omf"
@@ -15,10 +23,6 @@ alias mk='minikube --alsologtostderr'
 #	eval (ssh-agent -c)
 #	ssh-add ~/.ssh/id_rsa
 #end
-export GOPATH=$HOME/go
-export GOROOT=(brew --prefix golang)/libexec
-set -gx PATH {$GOPATH}/bin {$GOROOT}/bin ~/.local/bin /snap/bin $PATH
-set -gx PATH $PATH $HOME/.krew/bin
 
 
 alias homeconfig '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
