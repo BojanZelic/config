@@ -35,9 +35,43 @@
     "editor.inlineSuggest.enabled": true,
     "go.lintTool":"golangci-lint",
     "go.lintFlags": [
-    "--fast"
+        "--fast"
     ],
     "gitlens.currentLine.enabled": false,
     "gitlens.codeLens.enabled": false,
-    "go.toolsManagement.autoUpdate": true
+    "go.toolsManagement.autoUpdate": true,
+    "explorer.confirmDelete": false,
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "workbench.colorTheme": "Nord",
+    "github.copilot.enable": {
+        "*": false,
+        "yaml": true,
+        "plaintext": false,
+        "markdown": false,
+        "golang": false,
+        "go": false
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "kubescape.dirPath": "/opt/homebrew/bin/kubescape",
+    "extensions.supportUntrustedWorkspaces": {
+
+    },
+    "github.copilot.advanced": {
+
+
+
+    },
+    "go.lintOnSave": "file",
+    "gopls": {
+    "build.buildFlags": [
+        "-tags=integration"
+    ]
+    },
+    "editor.codeActionsOnSave": {
+    
+    
+    },
+    "go.alternateTools": {
+    
+    }
 }
