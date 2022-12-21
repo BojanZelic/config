@@ -1,9 +1,11 @@
 
-set -gx PATH /opt/homebrew/bin /opt/homebrew/sbin {$GOPATH}/bin {$GOROOT}/bin ~/.local/bin /snap/bin $PATH
+export GOBIN=$HOME/go/bin
+
+set -gx PATH {$GOBIN} /opt/homebrew/bin /opt/homebrew/sbin {$GOPATH}/bin {$GOROOT}/bin ~/.local/bin /snap/bin $PATH
 set -gx PATH $PATH $HOME/.krew/bin
 
 export GOPATH=$HOME/go
-export GOROOT=(brew --prefix golang)/libexec
+export GOROOT=(brew --prefix go@1.19)/libexec
 export GPG_TTY=(tty)
 
 # Path to Oh My Fish install.
@@ -26,3 +28,4 @@ alias mk='minikube --alsologtostderr'
 
 
 alias homeconfig '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+#kubectl completion fish | source
