@@ -3,6 +3,7 @@ export GOBIN=$HOME/go/bin
 
 set -gx PATH {$GOBIN} /opt/homebrew/bin /opt/homebrew/sbin {$GOPATH}/bin {$GOROOT}/bin ~/.local/bin /snap/bin $PATH
 set -gx PATH $PATH $HOME/.krew/bin
+set -gx PATH $PATH $HOME/.linkerd2/bin
 
 export GOPATH=$HOME/go
 export GOROOT=(brew --prefix go@1.19)/libexec
@@ -29,3 +30,5 @@ alias mk='minikube --alsologtostderr'
 
 alias homeconfig '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 #kubectl completion fish | source
+
+status --is-interactive; and rbenv init - fish | source

@@ -68,10 +68,12 @@
     ]
     },
     "editor.codeActionsOnSave": {
-    
-    
+
+
     },
     "go.alternateTools": {
-    
-    }
+
+    },
+    "window.zoomLevel": 1,
+    "diffEditor.ignoreTrimWhitespace": false
 }

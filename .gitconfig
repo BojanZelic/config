@@ -9,18 +9,10 @@
 [alias]
         recent = ! git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - (%(color:green)%(committerdate:relative)%(color:reset))' | sed 's/*//'
         checkout-branch= !BRANCH=`git recent | tac | fzf --ansi --no-sort --preview='git lg -p -5 --branches=master {1}' | tr -s ' ' | cut -d' ' -f2` && git checkout ${BRANCH}
-        undo-commit = reset --soft HEAD^
+	co = !bash -c 'git checkout $(git branch | fzf --query=$1)' -
+	cor = !bash -c 'git checkout --track $(git branch --remote | fzf --query=$1)' -        
+	undo-commit = reset --soft HEAD^
         lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-        freebase = "!f() { \
-	    TOPIC="$(git branch | grep '\\*' | cut -d ' ' -f2)"; \
-	    NEWBASE="${1:-master}"; \
-	    PREVSHA1="$(git rev-parse HEAD)"; \
-	    echo "Freebaseing $TOPIC onto $NEWBASE, previous sha1 was $PREVSHA1"; \
-	    echo "---"; \
-	    git reset --hard "$NEWBASE"; \
-	    git merge --squash "$PREVSHA1"; \
-	    git commit; \
-	  }; f"
 
 [push]
 	default = simple
@@ -32,3 +24,5 @@
 	helper = osxkeychain
 [pull]
 	rebase = false
+[merge]
+	tool = meld
