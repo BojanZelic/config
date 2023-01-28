@@ -12,3 +12,6 @@ if [ $? = 0 ]; then
 fi;
 home_config checkout -f master
 home_config config status.showUntrackedFiles no
+home_config submodule init
+home_config submodule update
+touch ~/.config/fish/config.variables.fish
