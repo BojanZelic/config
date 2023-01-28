@@ -1,7 +1,7 @@
 [user]
         email = bojan.zelic@qualia.com
         name = Bojan Zelic
-	signingkey = BA20EA25
+	signingkey =  4C052404
 [core]
         autocrlf = input
         editor = vim
